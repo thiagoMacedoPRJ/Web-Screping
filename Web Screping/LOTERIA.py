@@ -19,6 +19,7 @@ def loto():
              dt = htmlE.find('span', attrs={'class': 'qLLird'})
 
              data = dt.text[15:23]
+             concurso = dt.text[9:13]
              
              url2 = f'https://www.google.com/search?q=que%20dia%20foi%20{data}'
 
@@ -29,7 +30,7 @@ def loto():
              resul2 = sp2.find('div', attrs={'class': 'vk_bk dDoNo FzvWSb XcVN5d'})
              resull2 = sp2.find('div', attrs={'class': 'vk_gy vk_sh'})
              
-             print(resul2.text)
+             print(concurso)
              print(resull2.text)
 
              
